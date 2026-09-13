@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.sessions/
+scratch-unified-spy/
+*.log
+.DS_Store
+node_modules/
+.smoke_sidecar.mjs
+.omc/
+.mcp.json
+.serena/
+upstream-scratch-mcp/
+upstream-scratch4js/
+upstream-scratchpy-studio/

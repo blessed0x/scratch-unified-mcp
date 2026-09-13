@@ -1,0 +1,27 @@
+{
+  "name": "scratch-unified-sidecar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vendored headless Scratch VM sidecar for scratch-unified-mcp (forked from playforge-coding/scratch4js scratch-mcp).",
+  "license": "MPL-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "postinstall": "node -e \"console.log('[sidecar] deps installed.')\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "@turbowarp/scratch-svg-renderer": "^1.1.0",
+    "scratch-render-fonts": "github:TurboWarp/scratch-render-fonts#master",
+    "sharp": "^0.35.1",
+    "scratch-storage": "^6.2.1",
+    "scratch-vm": "github:TurboWarp/scratch-vm#develop",
+    "scratch4js": "^1.2.4",
+    "s-api4js": "^1.2.4",
+    "ws": "^8.21.0",
+    "zod": "^3.25.0"
+  }
+}

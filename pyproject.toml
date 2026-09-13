@@ -1,0 +1,29 @@
+[project]
+name = "scratch-unified-mcp"
+version = "1.0.0"
+description = "Unified Scratch MCP: headless TurboWarp VM + block surgery + blocks-to-Python, 117 tools over stdio."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+keywords = ["scratch", "mcp", "turbowarp", "headless-vm"]
+dependencies = [
+    "fastmcp>=3.4.4",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.2",
+    "scratchattach==3.0.0b3",
+]
+
+[project.scripts]
+scratch-unified = "scratch_unified.server:main"
+
+[project.urls]
+Homepage = "https://github.com/x3vu/scratch-unified-mcp"
+Issues = "https://github.com/x3vu/scratch-unified-mcp/issues"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scratch_unified*"]

@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# Thin launcher: `scratch-unified` on PATH resolves python3 and hands off to
+# the package. Installed by `install.sh` (symlink) or `pip install` (entry point).
+exec python3 -m scratch_unified "$@"

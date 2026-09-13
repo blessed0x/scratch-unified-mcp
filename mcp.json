@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "scratch-unified": {
+      "command": "/usr/bin/env",
+      "args": ["python3", "-m", "scratch_unified"],
+      "cwd": "/path/to/scratch-unified-mcp",
+      "env": {
+        "PYTHONPATH": "/path/to/scratch-unified-mcp",
+        "SCRATCH_MCP_DATA_DIR": "/path/to/scratch-unified-mcp/.sessions"
+      },
+      "timeout": 600000
+    }
+  }
+}
